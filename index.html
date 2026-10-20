@@ -1,0 +1,461 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Conecta Eletrônica</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        #quiz-container {
+            max-width: 700px;
+            margin: 30px auto;
+            padding: 25px;
+            text-align: left;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+        }
+
+        #progresso {
+            margin-bottom: 20px;
+            color: #777;
+            font-weight: bold;
+        }
+
+        #pergunta {
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        #alternativas {
+            display: grid;
+            gap: 12px;
+        }
+
+        .alternativa {
+            padding: 14px;
+            border: 2px solid #ddd;
+            border-radius: 10px;
+            background: #fff;
+            color: #222;
+            text-align: left;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .alternativa:hover:not(:disabled) {
+            border-color: #e5b900;
+            background: #fffbea;
+        }
+
+        .alternativa:disabled {
+            cursor: default;
+            opacity: 1;
+        }
+
+        .alternativa.correta {
+            border-color: #238636;
+            background: #e9f8ed;
+        }
+
+        .alternativa.errada {
+            border-color: #d93025;
+            background: #fff0ef;
+        }
+
+        #feedback {
+            min-height: 24px;
+            line-height: 1.6;
+            font-weight: bold;
+        }
+
+        #quiz-container .botao {
+            margin-top: 15px;
+            cursor: pointer;
+            border: none;
+        }
+
+        #resultado {
+            margin-top: 20px;
+        }
+
+        [hidden] {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <a class="logo" href="index.html">
+            Conecta <span>Eletrônica</span>
+        </a>
+
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="#conteudos">Conteúdos</a>
+            <a href="#sobre">Sobre</a>
+            <a href="#quiz">Quiz</a>
+        </nav>
+
+        <a class="botao" href="#conteudos">Explorar conteúdos</a>
+    </header>
+
+    <main>
+
+        <section class="apresentacao">
+            <span class="etiqueta">SEU PORTAL DE ELETRÔNICA</span>
+
+            <h1>
+                Descubra o mundo da
+                <span>eletrônica!</span>
+            </h1>
+
+            <p>
+                Aprenda sobre diodos, transistores e circuitos integrados
+                de um jeito simples, visual e divertido.
+            </p>
+
+            <a class="botao" href="#conteudos">
+                Começar a aprender
+            </a>
+        </section>
+
+        <section class="conteudos" id="conteudos">
+
+            <div class="titulo-secao">
+                <span class="etiqueta">APRENDA NA PRÁTICA</span>
+
+                <h2>Explore nossos conteúdos</h2>
+
+                <p>
+                    Conheça os componentes que fazem a eletrônica funcionar.
+                </p>
+            </div>
+
+            <div class="grade-cards">
+
+                <article class="card">
+                    <div class="icone-card">D</div>
+
+                    <h3>Diodos e Retificação</h3>
+
+                    <p>
+                        Entenda como os diodos conduzem corrente e como
+                        funcionam os circuitos retificadores.
+                    </p>
+
+                    <a href="diodos.html">Explorar conteúdo →</a>
+                </article>
+
+                <article class="card">
+                    <div class="icone-card">T</div>
+
+                    <h3>Transistores Bipolares (TBJ)</h3>
+
+                    <p>
+                        Descubra como controlar correntes e utilizar
+                        transistores como amplificadores e interruptores.
+                    </p>
+
+                    <a href="tbj.html">Explorar conteúdo →</a>
+                </article>
+
+                <article class="card">
+                    <div class="icone-card">M</div>
+
+                    <h3>MOSFETs</h3>
+
+                    <p>
+                        Aprenda como esses transistores controlados por
+                        tensão são usados em circuitos eletrônicos.
+                    </p>
+
+                    <a href="mosfets.html">Explorar conteúdo →</a>
+                </article>
+
+                <article class="card">
+                    <div class="icone-card">CI</div>
+
+                    <h3>Circuitos Integrados</h3>
+
+                    <p>
+                        Conheça os chips que reúnem diversos componentes
+                        em um único dispositivo.
+                    </p>
+
+                    <a href="circuitos-integrados.html">
+                        Explorar conteúdo →
+                    </a>
+                </article>
+
+            </div>
+        </section>
+
+        <section class="sobre" id="sobre">
+            <h2>Sobre o Conecta Eletrônica</h2>
+
+            <p>
+                Nosso objetivo é apresentar conceitos de eletrônica
+                de maneira clara, organizada e acessível, aproximando
+                a teoria das aplicações práticas.
+            </p>
+        </section>
+
+        <section class="quiz" id="quiz">
+            <span class="etiqueta">DESAFIO ELETRÔNICO</span>
+
+            <h2>Teste seus conhecimentos!</h2>
+
+            <p>
+                Responda às perguntas e descubra quanto você aprendeu.
+            </p>
+
+            <div id="quiz-container">
+                <div id="progresso">Pergunta 1 de 8</div>
+
+                <h3 id="pergunta">Carregando pergunta...</h3>
+
+                <div id="alternativas"></div>
+
+                <p id="feedback" aria-live="polite"></p>
+
+                <button class="botao" id="proximo" type="button" hidden>
+                    Próxima pergunta
+                </button>
+
+                <h3 id="resultado" aria-live="polite"></h3>
+
+                <button class="botao" id="reiniciar" type="button" hidden>
+                    Refazer quiz
+                </button>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Conecta Eletrônica — Aprender, compreender e conectar.</p>
+    </footer>
+
+    <script>
+        const perguntas = [
+            {
+                pergunta: "1. Qual é a principal função de um diodo?",
+                alternativas: [
+                    "Armazenar arquivos",
+                    "Permitir a passagem de corrente principalmente em um sentido",
+                    "Aumentar a capacidade da bateria",
+                    "Medir a temperatura"
+                ],
+                correta: 1,
+                explicacao: "O diodo conduz principalmente em um sentido quando está polarizado diretamente."
+            },
+            {
+                pergunta: "2. O que é retificação?",
+                alternativas: [
+                    "Transformar corrente alternada em corrente contínua pulsante",
+                    "Transformar luz em som",
+                    "Armazenar energia em um chip",
+                    "Aumentar o tamanho de um circuito"
+                ],
+                correta: 0,
+                explicacao: "Circuitos retificadores utilizam diodos para converter corrente alternada em corrente contínua pulsante."
+            },
+            {
+                pergunta: "3. O que significa TBJ?",
+                alternativas: [
+                    "Terminal Básico de Junção",
+                    "Transistor Bipolar de Junção",
+                    "Transmissor de Baixa Junção",
+                    "Transformador Bipolar de Joule"
+                ],
+                correta: 1,
+                explicacao: "TBJ significa Transistor Bipolar de Junção."
+            },
+            {
+                pergunta: "4. Quais são os três terminais de um TBJ?",
+                alternativas: [
+                    "Entrada, saída e terra",
+                    "Ânodo, cátodo e porta",
+                    "Base, coletor e emissor",
+                    "Fonte, dreno e porta"
+                ],
+                correta: 2,
+                explicacao: "O TBJ possui base, coletor e emissor."
+            },
+            {
+                pergunta: "5. Como um MOSFET é controlado?",
+                alternativas: [
+                    "Pela tensão aplicada à porta",
+                    "Somente pela luz",
+                    "Por uma engrenagem",
+                    "Apenas pela temperatura ambiente"
+                ],
+                correta: 0,
+                explicacao: "A tensão entre porta e fonte controla a condução do MOSFET."
+            },
+            {
+                pergunta: "6. Qual é uma aplicação comum dos MOSFETs?",
+                alternativas: [
+                    "Imprimir documentos",
+                    "Controlar cargas como chave eletrônica",
+                    "Armazenar livros em papel",
+                    "Substituir todos os resistores"
+                ],
+                correta: 1,
+                explicacao: "MOSFETs são muito usados como chaves eletrônicas em fontes e sistemas de controle."
+            },
+            {
+                pergunta: "7. O que é um circuito integrado?",
+                alternativas: [
+                    "Um cabo com vários conectores",
+                    "Um conjunto de componentes fabricados em um único chip",
+                    "Uma bateria recarregável",
+                    "Um tipo de interruptor mecânico"
+                ],
+                correta: 1,
+                explicacao: "Um circuito integrado reúne componentes eletrônicos em um pequeno chip."
+            },
+            {
+                pergunta: "8. Onde podemos encontrar circuitos integrados?",
+                alternativas: [
+                    "Em computadores e celulares",
+                    "Somente em lâmpadas antigas",
+                    "Apenas em ferramentas manuais",
+                    "Somente em motores a combustão"
+                ],
+                correta: 0,
+                explicacao: "Circuitos integrados estão presentes em celulares, computadores e muitos outros aparelhos."
+            }
+        ];
+
+        let indice = 0;
+        let pontos = 0;
+        let respondida = false;
+
+        const progresso = document.getElementById("progresso");
+        const pergunta = document.getElementById("pergunta");
+        const alternativas = document.getElementById("alternativas");
+        const feedback = document.getElementById("feedback");
+        const proximo = document.getElementById("proximo");
+        const resultado = document.getElementById("resultado");
+        const reiniciar = document.getElementById("reiniciar");
+
+        function mostrarPergunta() {
+            respondida = false;
+
+            const atual = perguntas[indice];
+
+            progresso.textContent =
+                `Pergunta ${indice + 1} de ${perguntas.length}`;
+
+            pergunta.textContent = atual.pergunta;
+            alternativas.replaceChildren();
+            feedback.textContent = "";
+            resultado.textContent = "";
+            proximo.hidden = true;
+
+            atual.alternativas.forEach((texto, i) => {
+                const botao = document.createElement("button");
+
+                botao.type = "button";
+                botao.className = "alternativa";
+                botao.textContent = texto;
+
+                botao.addEventListener("click", () => {
+                    verificarResposta(i);
+                });
+
+                alternativas.appendChild(botao);
+            });
+        }
+
+        function verificarResposta(escolha) {
+            if (respondida) return;
+
+            respondida = true;
+
+            const atual = perguntas[indice];
+            const botoes = alternativas.querySelectorAll("button");
+            const acertou = escolha === atual.correta;
+
+            botoes.forEach((botao, i) => {
+                botao.disabled = true;
+
+                if (i === atual.correta) {
+                    botao.classList.add("correta");
+                } else if (i === escolha) {
+                    botao.classList.add("errada");
+                }
+            });
+
+            if (acertou) {
+                pontos++;
+                feedback.textContent =
+                    "Muito bem! Resposta correta. " + atual.explicacao;
+            } else {
+                feedback.textContent =
+                    "Ainda não! " + atual.explicacao;
+            }
+
+            proximo.hidden = false;
+
+            proximo.textContent =
+                indice === perguntas.length - 1
+                    ? "Ver resultado"
+                    : "Próxima pergunta";
+        }
+
+        function mostrarResultado() {
+            progresso.textContent = "Quiz concluído!";
+            pergunta.textContent = "Você terminou o desafio!";
+            alternativas.replaceChildren();
+            feedback.textContent = "";
+
+            const percentual = Math.round(
+                (pontos / perguntas.length) * 100
+            );
+
+            resultado.textContent =
+                `Você acertou ${pontos} de ${perguntas.length} perguntas (${percentual}%).`;
+
+            if (pontos === perguntas.length) {
+                resultado.textContent += " Excelente! Você acertou todas!";
+            } else if (pontos >= 5) {
+                resultado.textContent += " Muito bem! Continue aprendendo!";
+            } else {
+                resultado.textContent +=
+                    " Vale revisar os conteúdos e tentar novamente!";
+            }
+
+            proximo.hidden = true;
+            reiniciar.hidden = false;
+        }
+
+        proximo.addEventListener("click", () => {
+            if (indice < perguntas.length - 1) {
+                indice++;
+                mostrarPergunta();
+            } else {
+                mostrarResultado();
+            }
+        });
+
+        reiniciar.addEventListener("click", () => {
+            indice = 0;
+            pontos = 0;
+            reiniciar.hidden = true;
+            mostrarPergunta();
+        });
+
+        mostrarPergunta();
+    </script>
+
+</body>
+</html>

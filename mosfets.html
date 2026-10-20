@@ -1,0 +1,401 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MOSFETs | Conecta Eletrônica</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        /* Título e subtítulo centralizados */
+        .apresentacao {
+            text-align: center;
+        }
+
+        .apresentacao h1,
+        .apresentacao p {
+            text-align: center;
+        }
+
+        /* Conteúdos alinhados à esquerda */
+        .conteudos,
+        .conteudos .card {
+            text-align: left;
+        }
+
+        .conteudos h2,
+        .conteudos h3,
+        .conteudos p,
+        .conteudos ul,
+        .conteudos ol {
+            text-align: left;
+        }
+
+        .conteudos .card {
+            margin-bottom: 20px;
+        }
+
+        .conteudos .card li {
+            margin-bottom: 8px;
+        }
+
+        /* Cores do nome Conecta Eletrônica */
+        .logo a {
+            text-decoration: none;
+        }
+
+        .logo .nome-conecta {
+            color: #ffffff;
+        }
+
+        .logo .nome-eletronica {
+            color: #ffd700;
+        }
+
+        /* Botão para voltar aos conteúdos */
+        .voltar-conteudos {
+            text-align: left;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header class="cabecalho">
+        <div class="logo">
+            <a href="index.html">
+                <span class="nome-conecta">Conecta</span>
+                <span class="nome-eletronica">Eletrônica</span>
+            </a>
+        </div>
+
+        <nav class="menu">
+            <a href="index.html">Início</a>
+            <a href="index.html#conteudos">Conteúdos</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="apresentacao">
+            <span class="etiqueta">Semicondutores e componentes ativos</span>
+
+            <h1>MOSFETs</h1>
+
+            <p>
+                Aprenda o que são os MOSFETs, como funcionam e por que
+                são tão importantes no controle de corrente elétrica
+                e no funcionamento dos circuitos eletrônicos modernos.
+            </p>
+        </section>
+
+        <section class="conteudos">
+
+            <article class="card">
+                <h2>1. O que é um MOSFET?</h2>
+
+                <p>
+                    MOSFET é a sigla para transistor de efeito de campo
+                    de metal-óxido-semicondutor. É um componente eletrônico
+                    utilizado para controlar a passagem de corrente
+                    elétrica em um circuito.
+                </p>
+
+                <p>
+                    Ele é encontrado em fontes de alimentação, sistemas
+                    de controle, computadores, celulares e diversos
+                    equipamentos eletrônicos.
+                </p>
+            </article>
+
+            <article class="card">
+                <h2>2. Como funciona um MOSFET?</h2>
+
+                <p>
+                    O MOSFET controla a corrente entre dois terminais
+                    principais por meio da tensão aplicada ao terceiro
+                    terminal, chamado gate ou porta.
+                </p>
+
+                <p>
+                    Diferentemente do transistor TBJ, que normalmente
+                    é controlado pela corrente de base, o MOSFET é
+                    controlado principalmente pela tensão entre a
+                    porta e a fonte.
+                </p>
+
+                <p>
+                    Isso permite controlar correntes com um consumo
+                    muito pequeno de corrente na entrada, embora
+                    existam características e limites específicos
+                    para cada componente.
+                </p>
+            </article>
+
+            <article class="card">
+                <h2>3. Quais são os terminais do MOSFET?</h2>
+
+                <p>O MOSFET possui três terminais principais:</p>
+
+                <ul>
+                    <li>
+                        <strong>Gate (G) — Porta:</strong>
+                        recebe a tensão que controla o funcionamento
+                        do componente.
+                    </li>
+
+                    <li>
+                        <strong>Drain (D) — Dreno:</strong>
+                        é um dos terminais por onde circula a corrente
+                        do dispositivo.
+                    </li>
+
+                    <li>
+                        <strong>Source (S) — Fonte:</strong>
+                        é o outro terminal principal do caminho da corrente.
+                    </li>
+                </ul>
+
+                <p>
+                    Alguns MOSFETs também possuem um terminal associado
+                    ao corpo semicondutor, cuja conexão depende do tipo
+                    e da construção do componente.
+                </p>
+            </article>
+
+            <article class="card">
+                <h2>4. Tipos de MOSFET</h2>
+
+                <p>
+                    Os MOSFETs podem ser classificados de diferentes
+                    maneiras. Entre os mais conhecidos estão:
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Canal N:</strong>
+                        muito utilizado em circuitos de chaveamento
+                        e controle de potência.
+                    </li>
+
+                    <li>
+                        <strong>Canal P:</strong>
+                        utilizado em circuitos que exigem polaridades
+                        de controle diferentes das utilizadas pelo
+                        canal N.
+                    </li>
+                </ul>
+
+                <p>
+                    Também existem MOSFETs de modo de enriquecimento
+                    e de modo de depleção. Os de modo de enriquecimento
+                    são bastante comuns em aplicações eletrônicas.
+                </p>
+            </article>
+
+            <article class="card">
+                <h2>5. MOSFET como chave eletrônica</h2>
+
+                <p>
+                    Uma das aplicações mais comuns do MOSFET é funcionar
+                    como uma chave eletrônica, permitindo ou interrompendo
+                    a passagem de corrente em um circuito.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>Ligado:</strong>
+                        quando recebe uma tensão de controle adequada,
+                        o MOSFET pode conduzir corrente.
+                    </li>
+
+                    <li>
+                        <strong>Desligado:</strong>
+                        quando a tensão de controle não é suficiente
+                        para ativá-lo, ele normalmente bloqueia a
+                        maior parte da corrente entre dreno e fonte.
+                    </li>
+                </ul>
+
+                <p>
+                    É importante verificar a tensão de acionamento
+                    e os limites elétricos especificados pelo fabricante.
+                </p>
+            </article>
+
+            <article class="card">
+                <h2>6. Diferença entre MOSFET e TBJ</h2>
+
+                <p>
+                    Embora ambos sejam transistores, eles possuem
+                    diferenças importantes em seu funcionamento.
+                </p>
+
+                <ul>
+                    <li>
+                        <strong>TBJ:</strong>
+                        é controlado principalmente pela corrente
+                        aplicada à base.
+                    </li>
+
+                    <li>
+                        <strong>MOSFET:</strong>
+                        é controlado principalmente pela tensão
+                        aplicada à porta.
+                    </li>
+
+                    <li>
+                        <strong>Aplicações:</strong>
+                        os dois podem amplificar sinais e funcionar
+                        como chaves, mas suas características elétricas
+                        determinam qual é mais adequado para cada circuito.
+                    </li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>7. Onde os MOSFETs são utilizados?</h2>
+
+                <p>Os MOSFETs estão presentes em muitas aplicações:</p>
+
+                <ul>
+                    <li>Fontes de alimentação chaveadas;</li>
+                    <li>Controle de motores elétricos;</li>
+                    <li>Carregadores de dispositivos eletrônicos;</li>
+                    <li>Circuitos de controle de LEDs;</li>
+                    <li>Conversores de energia;</li>
+                    <li>Processadores e circuitos integrados;</li>
+                    <li>Sistemas de gerenciamento de baterias.</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>8. Exemplo prático: controle de um LED</h2>
+
+                <p>
+                    Um MOSFET pode controlar um LED utilizando um sinal
+                    de tensão aplicado à porta. Quando o componente
+                    recebe uma tensão de acionamento adequada, permite
+                    que a corrente circule pelo LED.
+                </p>
+
+                <p>
+                    Quando o MOSFET é desligado, a corrente diminui
+                    e o LED pode apagar.
+                </p>
+
+                <p>
+                    Para montar um circuito real, é necessário escolher
+                    um MOSFET adequado à tensão de controle e à corrente
+                    exigida, além de utilizar um resistor limitador
+                    de corrente para o LED.
+                </p>
+            </article>
+
+            <article class="card">
+                <h2>9. Você sabia?</h2>
+
+                <p>
+                    Os MOSFETs são fundamentais para a fabricação
+                    de processadores e memórias. Muitos circuitos
+                    integrados modernos contêm bilhões de transistores
+                    desse tipo, trabalhando em conjunto para realizar
+                    cálculos e processar informações.
+                </p>
+            </article>
+
+            <article class="card">
+                <h2>10. Resumo do conteúdo</h2>
+
+                <ul>
+                    <li>O MOSFET é um transistor de efeito de campo.</li>
+                    <li>Possui gate, drain e source.</li>
+                    <li>Seu controle ocorre principalmente por tensão.</li>
+                    <li>Pode funcionar como chave eletrônica.</li>
+                    <li>É muito utilizado no controle de potência.</li>
+                    <li>É fundamental na fabricação de circuitos integrados.</li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h2>11. Teste seus conhecimentos</h2>
+
+                <p>
+                    <strong>1.</strong> Qual terminal controla
+                    o funcionamento do MOSFET?
+                </p>
+
+                <details>
+                    <summary>Ver resposta</summary>
+                    <p>Gate, também chamado de porta.</p>
+                </details>
+
+                <p>
+                    <strong>2.</strong> Quais são os três terminais
+                    principais do MOSFET?
+                </p>
+
+                <details>
+                    <summary>Ver resposta</summary>
+                    <p>Gate, drain e source.</p>
+                </details>
+
+                <p>
+                    <strong>3.</strong> Cite duas aplicações dos MOSFETs.
+                </p>
+
+                <details>
+                    <summary>Ver resposta</summary>
+                    <p>
+                        Fontes de alimentação chaveadas e controle
+                        de motores elétricos.
+                    </p>
+                </details>
+            </article>
+
+            <article class="card">
+                <h2>12. Referências para estudar</h2>
+
+                <ul>
+                    <li>
+                        <a
+                            href="https://www.allaboutcircuits.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            All About Circuits
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            href="https://www.electronics-tutorials.ws/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Electronics Tutorials
+                        </a>
+                    </li>
+                </ul>
+            </article>
+
+        </section>
+
+        <div class="voltar-conteudos">
+            <a href="index.html#conteudos" class="botao">
+                Voltar aos conteúdos
+            </a>
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+        <p>Conecta Eletrônica — Aprenda eletrônica de forma simples.</p>
+    </footer>
+
+</body>
+</html>
