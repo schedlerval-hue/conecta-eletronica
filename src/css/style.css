@@ -1,0 +1,926 @@
+
+/* ==========================================
+   CONECTA ELETRÔNICA
+   ESTILO COMPLETO DO PORTAL
+========================================== */
+
+:root {
+    --rosa: #F05B9A;
+    --rosa-escuro: #C83E7C;
+    --rosa-claro: #FFF0F6;
+    --rosa-borda: #F3B5D0;
+    --amarelo: #FFD34F;
+    --fundo: #FFFCF8;
+    --fundo-bege: #FFF3E5;
+    --texto: #49372F;
+    --texto-suave: #74635A;
+    --branco: #FFFFFF;
+    --borda: #F4DFE7;
+    --sombra: 0 8px 22px rgba(200, 62, 124, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 25px;
+}
+
+body {
+    margin: 0;
+    font-family: "Nunito", sans-serif;
+    background: var(--fundo);
+    color: var(--texto);
+    line-height: 1.7;
+}
+
+.container {
+    width: min(1100px, 90%);
+    margin: 0 auto;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    line-height: 1.35;
+}
+
+p {
+    color: var(--texto-suave);
+}
+
+a,
+button {
+    transition: all 0.2s ease;
+}
+
+/* ==========================================
+   CABEÇALHO
+========================================== */
+
+header {
+    background: var(--rosa);
+    color: var(--branco);
+    padding: 20px 0;
+    border-bottom: 5px solid var(--amarelo);
+}
+
+header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    margin: 0;
+    color: var(--branco);
+    font-size: 27px;
+    font-weight: 800;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: var(--branco);
+    text-decoration: none;
+    font-weight: 700;
+    padding: 8px 12px;
+    border-radius: 10px;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* ==========================================
+   PÁGINA INICIAL
+========================================== */
+
+.hero {
+    background: linear-gradient(135deg, #FFF0F6, #FFF8EE);
+    padding: 75px 0;
+    text-align: center;
+    border-bottom: 1px solid var(--borda);
+}
+
+.hero .container {
+    max-width: 800px;
+}
+
+.destaque {
+    display: inline-block;
+    color: var(--rosa-escuro);
+    background: var(--branco);
+    border: 1px solid var(--rosa-borda);
+    border-radius: 30px;
+    padding: 7px 16px;
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 20px;
+}
+
+.hero h2 {
+    font-size: clamp(34px, 5vw, 49px);
+    color: var(--rosa-escuro);
+    margin-bottom: 18px;
+}
+
+.hero p:not(.destaque) {
+    max-width: 650px;
+    margin: 0 auto 25px;
+    font-size: 18px;
+}
+
+/* ==========================================
+   BOTÕES
+========================================== */
+
+.botao {
+    display: inline-block;
+    background: var(--rosa);
+    color: var(--branco);
+    border: 2px solid var(--rosa);
+    border-radius: 13px;
+    padding: 13px 23px;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 800;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 5px 12px rgba(200, 62, 124, 0.15);
+}
+
+.botao:hover {
+    background: var(--rosa-escuro);
+    border-color: var(--rosa-escuro);
+    transform: translateY(-2px);
+}
+
+/* ==========================================
+   IMPORTÂNCIA DA ELETRÔNICA
+========================================== */
+
+.importancia {
+    background: var(--fundo-bege);
+    padding: 45px 0;
+}
+
+.conteudo-importancia {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 35px;
+}
+
+.conteudo-importancia h2 {
+    margin-bottom: 0;
+}
+
+.conteudo-importancia > p {
+    margin-bottom: 0;
+    font-size: 16px;
+}
+
+.subtitulo {
+    color: var(--rosa-escuro);
+    font-size: 13px;
+    font-weight: 800;
+    letter-spacing: 1.5px;
+    margin-bottom: 10px;
+}
+
+/* ==========================================
+   SEÇÕES DA PÁGINA INICIAL
+========================================== */
+
+.secao {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.cabecalho-secao {
+    text-align: center;
+    max-width: 720px;
+    margin: 0 auto 35px;
+}
+
+.cabecalho-secao h2 {
+    margin-bottom: 12px;
+}
+
+.cabecalho-secao > p:last-of-type {
+    margin-bottom: 22px;
+}
+
+/* ==========================================
+   CARDS DA PÁGINA INICIAL
+========================================== */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 28px;
+    margin-top: 35px;
+    align-items: stretch;
+}
+
+.card {
+    background: var(--branco);
+    border: 2px solid var(--rosa-borda);
+    border-top: 6px solid var(--rosa);
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: var(--sombra);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(200, 62, 124, 0.2);
+}
+
+.icone-card {
+    width: 52px;
+    height: 52px;
+    flex-shrink: 0;
+    border-radius: 16px;
+    background: var(--rosa);
+    color: var(--branco);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 19px;
+    font-weight: 800;
+}
+
+.card h3 {
+    color: var(--rosa-escuro);
+    font-size: 23px;
+    font-weight: 800;
+    margin: 4px 0 0;
+}
+
+.card p {
+    color: var(--texto-suave);
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 8px;
+}
+
+.link-card {
+    display: inline-block;
+    margin-top: auto;
+    padding: 11px 16px;
+    background: var(--rosa-claro);
+    color: var(--rosa-escuro);
+    border: 1px solid var(--rosa-borda);
+    border-radius: 12px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.link-card:hover {
+    background: var(--rosa);
+    color: var(--branco);
+}
+
+/* ==========================================
+   SOBRE O PROJETO
+========================================== */
+
+.sobre {
+    background: var(--fundo-bege);
+    padding: 55px 0;
+    text-align: center;
+    border-top: 1px solid var(--borda);
+    border-bottom: 1px solid var(--borda);
+}
+
+.sobre .container {
+    max-width: 800px;
+}
+
+.sobre h2 {
+    color: var(--rosa-escuro);
+}
+
+.sobre p:last-child {
+    margin-bottom: 0;
+}
+
+/* ==========================================
+   QUIZ
+========================================== */
+
+.quiz {
+    text-align: center;
+}
+
+#abrir-quiz {
+    margin-top: 5px;
+}
+
+#area-quiz {
+    max-width: 760px;
+    margin: 35px auto 0;
+    text-align: left;
+    scroll-margin-top: 25px;
+}
+
+#area-quiz[hidden],
+#resultado[hidden],
+#proximo[hidden],
+#reiniciar[hidden] {
+    display: none !important;
+}
+
+#quiz-container {
+    background: var(--branco);
+    border: 2px solid var(--rosa-borda);
+    border-radius: 22px;
+    padding: 30px;
+    box-shadow: var(--sombra);
+}
+
+#progresso {
+    color: var(--rosa-escuro);
+    font-weight: 800;
+    font-size: 14px;
+}
+
+#pergunta {
+    color: var(--texto);
+    font-size: 22px;
+    margin-bottom: 22px;
+}
+
+#alternativas {
+    display: grid;
+    gap: 12px;
+}
+
+.alternativa {
+    width: 100%;
+    background: var(--branco);
+    border: 2px solid var(--borda);
+    border-radius: 12px;
+    padding: 13px 16px;
+    color: var(--texto);
+    text-align: left;
+    font-family: inherit;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.alternativa:hover {
+    background: var(--rosa-claro);
+    border-color: var(--rosa);
+}
+
+.alternativa.correta {
+    background: #E7F8EC;
+    border-color: #49A968;
+}
+
+.alternativa.errada {
+    background: #FFF0F0;
+    border-color: #E56B6B;
+}
+
+#feedback {
+    margin-top: 18px;
+    font-weight: 800;
+}
+
+#proximo,
+#reiniciar {
+    background: var(--rosa);
+    color: var(--branco);
+    border: 0;
+    border-radius: 12px;
+    padding: 12px 20px;
+    margin-top: 15px;
+    font-family: inherit;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+#proximo:hover,
+#reiniciar:hover {
+    background: var(--rosa-escuro);
+}
+
+#resultado {
+    margin-top: 20px;
+    padding: 20px;
+    background: var(--rosa-claro);
+    border-radius: 15px;
+    color: var(--texto);
+}
+
+/* ==========================================
+   PÁGINAS INTERNAS DOS COMPONENTES
+
+   Use class="pagina-conteudo" no body de:
+   diodos.html, tbj.html, mosfets.html
+   circuitos-integrados.html
+========================================== */
+
+body.pagina-conteudo {
+    background: var(--fundo-bege);
+    min-height: 100vh;
+}
+
+/* Caixa principal branca */
+body.pagina-conteudo main {
+    width: 100%;
+    padding: 50px 0;
+}
+
+/* Cada seção vira uma caixa independente */
+body.pagina-conteudo main section {
+    width: 90%;
+    max-width: 1450px;
+    margin: 0 auto 28px;
+    padding: 35px 30px;
+    background: var(--branco);
+    border: 2px solid #FFD9E9;
+    border-radius: 20px;
+    box-shadow: 0 10px 28px rgba(200, 62, 124, 0.10);
+}
+
+/* Conteúdo geral das páginas internas */
+body.pagina-conteudo main > .container {
+    width: 90%;
+    max-width: 1450px;
+    margin: 0 auto 28px;
+    padding: 35px 30px;
+    background: var(--branco);
+    border: 2px solid #FFD9E9;
+    border-radius: 20px;
+    box-shadow: 0 10px 28px rgba(200, 62, 124, 0.10);
+}
+
+/* Títulos alinhados à esquerda */
+body.pagina-conteudo main h2,
+body.pagina-conteudo main h3,
+body.pagina-conteudo main h4 {
+    text-align: left;
+    color: #75401F;
+    margin-top: 0;
+    margin-bottom: 16px;
+}
+
+/* Textos alinhados à esquerda */
+body.pagina-conteudo main p {
+    text-align: left;
+    line-height: 1.8;
+    margin-bottom: 18px;
+}
+
+/* Listas alinhadas à esquerda */
+body.pagina-conteudo main ul,
+body.pagina-conteudo main ol {
+    text-align: left;
+    padding-left: 36px;
+}
+
+/* Grades de cards nas páginas internas */
+body.pagina-conteudo main .cards {
+    width: 100%;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    margin: 25px auto;
+}
+
+/* Cards internos */
+body.pagina-conteudo main .card {
+    background: var(--branco);
+    border: 2px solid var(--rosa-borda);
+    border-top: 5px solid var(--rosa);
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow: 0 6px 18px rgba(200, 62, 124, 0.10);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 14px;
+}
+
+/* Títulos e textos dos cards internos */
+body.pagina-conteudo main .card h3,
+body.pagina-conteudo main .card p {
+    width: 100%;
+    text-align: center;
+}
+
+/* Botões de voltar aos conteúdos */
+body.pagina-conteudo main a.botao {
+    display: inline-block;
+    background: var(--amarelo);
+    color: #75401F;
+    border: 2px solid var(--amarelo);
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-weight: 800;
+    text-decoration: none;
+    box-shadow: none;
+}
+
+body.pagina-conteudo main a.botao:hover {
+    background: #FFC928;
+    border-color: #FFC928;
+    transform: translateY(-2px);
+}
+
+/* Caixas de perguntas e respostas */
+body.pagina-conteudo main details {
+    margin: 16px 0;
+    padding: 18px 20px;
+    background: #FFFCF8;
+    border: 1px solid var(--rosa-borda);
+    border-radius: 14px;
+}
+
+body.pagina-conteudo main summary {
+    color: var(--rosa-escuro);
+    font-weight: 800;
+    cursor: pointer;
+}
+
+body.pagina-conteudo main details p {
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+
+/* ==========================================
+   RODAPÉ
+========================================== */
+
+footer {
+    background: var(--rosa);
+    color: var(--branco);
+    padding: 25px 0;
+    text-align: center;
+    border-top: 5px solid var(--amarelo);
+}
+
+footer p {
+    color: var(--branco);
+    margin: 0;
+    font-weight: 700;
+}
+
+/* ==========================================
+   RESPONSIVIDADE
+========================================== */
+
+@media (max-width: 650px) {
+    header .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .hero {
+        padding: 50px 0;
+    }
+
+    .hero p:not(.destaque) {
+        font-size: 16px;
+    }
+
+    .conteudo-importancia {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .secao {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .cards {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .card {
+        padding: 24px;
+    }
+
+    #quiz-container {
+        padding: 20px;
+    }
+
+    #pergunta {
+        font-size: 20px;
+    }
+
+    body.pagina-conteudo main {
+        padding: 25px 0;
+    }
+
+    body.pagina-conteudo main section,
+    body.pagina-conteudo main > .container {
+        width: 94%;
+        padding: 24px 18px;
+        margin-bottom: 20px;
+    }
+
+    body.pagina-conteudo main .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* =========================================
+   CORREÇÃO DO VISUAL DAS PÁGINAS INTERNAS
+   Diodos, TBJ, MOSFETs e Circuitos Integrados
+========================================= */
+
+body.pagina-conteudo {
+    background: #FFF3E5;
+}
+
+/* Uma única caixa branca para todo o conteúdo */
+body.pagina-conteudo main {
+    width: 90%;
+    max-width: 1450px;
+    margin: 45px auto;
+    padding: 35px 30px;
+    background: #FFFFFF;
+    border: 2px solid #FFD9E9;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(200, 62, 124, 0.12);
+}
+
+/* Remove caixas adicionais que dividem o conteúdo */
+body.pagina-conteudo main section,
+body.pagina-conteudo main > .container {
+    width: 100%;
+    max-width: none;
+    margin: 0 0 30px;
+    padding: 0;
+    background: transparent;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Títulos alinhados à esquerda */
+body.pagina-conteudo main h2,
+body.pagina-conteudo main h3,
+body.pagina-conteudo main h4 {
+    text-align: left;
+    color: #75401F;
+    margin: 0 0 16px;
+}
+
+/* Parágrafos alinhados à esquerda */
+body.pagina-conteudo main p {
+    text-align: left;
+    line-height: 1.8;
+    margin: 0 0 18px;
+}
+
+/* Evita que explicações fiquem lado a lado */
+body.pagina-conteudo main .linha,
+body.pagina-conteudo main .explicacao,
+body.pagina-conteudo main .polarizacao {
+    display: block;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Listas */
+body.pagina-conteudo main ul,
+body.pagina-conteudo main ol {
+    text-align: left;
+    padding-left: 36px;
+}
+
+/* Cards de aplicações permanecem lado a lado */
+body.pagina-conteudo main .cards {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 24px;
+    width: 100%;
+    margin: 25px 0;
+}
+
+/* Estilo dos cards de aplicações */
+body.pagina-conteudo main .card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 28px;
+    background: #FFFFFF;
+    border: 2px solid #F3B5D0;
+    border-top: 5px solid #F05B9A;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(200, 62, 124, 0.10);
+}
+
+body.pagina-conteudo main .card h3,
+body.pagina-conteudo main .card p {
+    width: 100%;
+    text-align: center;
+}
+
+/* Perguntas expansíveis */
+body.pagina-conteudo main details {
+    margin: 16px 0;
+    padding: 18px 20px;
+    background: #FFFCF8;
+    border: 1px solid #F3B5D0;
+    border-radius: 14px;
+}
+
+body.pagina-conteudo main summary {
+    color: #C83E7C;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+/* Botão amarelo para voltar */
+body.pagina-conteudo main a.botao {
+    display: inline-block;
+    margin-top: 0;
+    padding: 12px 20px;
+    background: #FFD34F;
+    color: #75401F;
+    border: 2px solid #FFD34F;
+    border-radius: 12px;
+    box-shadow: none;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+body.pagina-conteudo main a.botao:hover {
+    background: #FFC928;
+    border-color: #FFC928;
+}
+
+/* Celulares */
+@media (max-width: 650px) {
+    body.pagina-conteudo main {
+        width: 94%;
+        margin: 25px auto;
+        padding: 24px 18px;
+    }
+
+    body.pagina-conteudo main .cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Caixa única da página de Diodos e demais conteúdos */
+body.pagina-conteudo main > .caixa-conteudo {
+    width: 90%;
+    max-width: 1450px;
+    margin: 0 auto 45px;
+    padding: 35px 30px;
+    background: #FFFFFF;
+    border: 2px solid #FFD9E9;
+    border-radius: 20px;
+    box-shadow: 0 12px 30px rgba(200, 62, 124, 0.12);
+}
+
+/* Textos e títulos da caixa */
+body.pagina-conteudo main > .caixa-conteudo h2,
+body.pagina-conteudo main > .caixa-conteudo h3,
+body.pagina-conteudo main > .caixa-conteudo p {
+    text-align: left;
+}
+
+/* Cards dentro da caixa */
+body.pagina-conteudo main > .caixa-conteudo .cards {
+    margin: 25px 0;
+}
+
+body.pagina-conteudo main > .caixa-conteudo .card {
+    align-items: center;
+    text-align: center;
+}
+
+/* Botão de voltar */
+body.pagina-conteudo main > .caixa-conteudo .botao-voltar {
+    margin-top: 20px;
+}
+
+/* Celulares */
+@media (max-width: 650px) {
+    body.pagina-conteudo main > .caixa-conteudo {
+        width: 94%;
+        padding: 24px 18px;
+    }
+}
+
+/* Centralizar somente o título da apresentação */
+body.pagina-conteudo main > .hero h2 {
+    text-align: center;
+}
+/* ===================================================
+   LAYOUT LADO A LADO E MENU LATERAL (SIDEBAR)
+   =================================================== */
+
+/* 1. Container que junta o Menu e o Conteúdo Lado a Lado */
+.layout-container {
+    display: flex;             /* Coloca a Sidebar e o Main lado a lado */
+    flex-direction: row;        /* Sidebar na esquerda, Main na direita */
+    width: 100%;
+    min-height: calc(100vh - 120px);
+}
+
+/* 2. Menu Lateral (Sidebar Vertical na Esquerda) */
+.sidebar {
+    width: 260px;               /* Largura fixa do menu */
+    min-width: 220px;
+    background-color: #f8f9fa;  /* Cor de fundo suave */
+    border-right: 2px solid #e0e0e0; /* Linha vertical a separar da página */
+    padding: 1.5rem 1rem;
+    box-sizing: border-box;
+}
+
+.sidebar h3 {
+    font-size: 1.1rem;
+    color: #0d233a;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #00a8ff;
+}
+
+/* Lista vertical dos links */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;    /* Coloca os itens um debaixo do outro (Vertical) */
+    gap: 0.5rem;
+}
+
+.sidebar li a {
+    display: block;
+    padding: 0.6rem 0.8rem;
+    color: #333;
+    text-decoration: none;
+    font-weight: 600;
+    border-radius: 6px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+/* Cor quando passa o rato ou quando a página está ativa */
+.sidebar li a:hover,
+.sidebar li a.active {
+    background-color: #00a8ff;
+    color: #ffffff;
+}
+
+/* 3. Painel Principal (Main) no lado direito */
+.content-area, main {
+    flex: 1;                    /* Ocupa todo o resto do espaço no ecrã */
+    padding: 2rem;
+    box-sizing: border-box;
+}

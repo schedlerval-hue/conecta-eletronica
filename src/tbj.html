@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Transistores TBJ | Conecta Eletrônica</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Caminho atualizado para a pasta css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pagina-conteudo">
+
+    <header class="top-bar">
+        <div class="container">
+            <h1>Conecta Eletrônica</h1>
+
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="index.html#conteudos">Conteúdos</a>
+                <a href="index.html#sobre">Sobre</a>
+                <a href="index.html#quiz">Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTAINER DE LAYOUT (Sidebar + Main) -->
+    <div class="layout-container">
+
+        <!-- MENU LATERAL (SIDEBAR) ADICIONADO -->
+        <aside class="sidebar">
+            <h3>Navegação de Assuntos</h3>
+            <ul>
+                <li><a href="index.html">Início (Visão Geral)</a></li>
+                <li><a href="diodos.html">Diodos e Retificação</a></li>
+                <li><a href="tbj.html" class="active">Transistores (TBJ)</a></li>
+                <li><a href="mosfets.html">Transistores MOSFET</a></li>
+                <li><a href="circuitos-integrados.html">Circuitos Integrados</a></li>
+            </ul>
+        </aside>
+
+        <!-- PAINEL CENTRAL (CONTEÚDO) -->
+        <main class="content-area">
+
+            <!-- Apresentação -->
+            <section class="hero">
+                <div class="container">
+                    <h2>Transistores TBJ</h2>
+
+                    <p>
+                        Conheça os transistores bipolares de junção e descubra como
+                        eles podem controlar e amplificar sinais elétricos.
+                    </p>
+
+                    <a class="botao" href="#conteudo-tbj">
+                        Começar a aprender
+                    </a>
+                </div>
+            </section>
+
+            <!-- Caixa principal de conteúdo -->
+            <section id="conteudo-tbj" class="caixa-conteudo">
+
+                <h2>1. O que é um transistor TBJ?</h2>
+
+                <p>
+                    O transistor bipolar de junção, conhecido como TBJ ou BJT,
+                    é um componente semicondutor utilizado principalmente para
+                    amplificar sinais elétricos e funcionar como uma chave eletrônica.
+                </p>
+
+                <h2>2. Quais são seus terminais?</h2>
+
+                <p>
+                    O TBJ possui três terminais principais, cada um com uma função
+                    importante no controle da corrente elétrica.
+                </p>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <h3>Base (B)</h3>
+                        <p>
+                            Controla o funcionamento do transistor por meio de uma
+                            pequena corrente em configurações comuns.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Coletor (C)</h3>
+                        <p>
+                            É um dos terminais por onde circula a corrente principal
+                            do transistor.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Emissor (E)</h3>
+                        <p>
+                            É o terminal relacionado à entrada ou saída da corrente
+                            principal, dependendo da configuração do circuito.
+                        </p>
+                    </article>
+
+                </div>
+
+                <h2>3. Tipos de transistor TBJ</h2>
+
+                <h3>NPN</h3>
+
+                <p>
+                    É um tipo de transistor formado por regiões semicondutoras N, P e N.
+                    É muito utilizado em circuitos de amplificação e chaveamento.
+                </p>
+
+                <h3>PNP</h3>
+
+                <p>
+                    É formado por regiões P, N e P. Seu funcionamento envolve
+                    polaridades e sentidos de corrente diferentes dos encontrados
+                    em uma configuração NPN equivalente.
+                </p>
+
+                <h2>4. Como funciona?</h2>
+
+                <p>
+                    Em condições apropriadas, uma corrente relativamente pequena
+                    na base permite controlar uma corrente maior entre o coletor
+                    e o emissor. O comportamento depende do tipo de transistor e
+                    da forma como ele está ligado ao circuito.
+                </p>
+
+                <h2>5. Regiões de funcionamento</h2>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <h3>Corte</h3>
+                        <p>
+                            O transistor está praticamente desligado, com corrente
+                            muito pequena entre coletor e emissor.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Região ativa</h3>
+                        <p>
+                            O transistor pode funcionar como amplificador de sinais.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Saturação</h3>
+                        <p>
+                            O transistor está fortemente conduzindo e pode funcionar
+                            como uma chave ligada.
+                        </p>
+                    </article>
+
+                </div>
+
+                <h2>6. Onde os TBJs são utilizados?</h2>
+
+                <ul>
+                    <li>Amplificação de sinais de áudio.</li>
+                    <li>Circuitos de acionamento.</li>
+                    <li>Equipamentos eletrônicos e sistemas de comunicação.</li>
+                    <li>Circuitos de controle e processamento de sinais.</li>
+                </ul>
+
+                <h2>7. Exemplo de aplicação</h2>
+
+                <p>
+                    Um TBJ pode ser usado para controlar um LED a partir de um sinal
+                    de controle de baixa corrente. O circuito precisa ser dimensionado
+                    corretamente, incluindo os resistores necessários, para proteger
+                    o transistor e o LED.
+                </p>
+
+                <h2>8. Curiosidade</h2>
+
+                <p>
+                    Os transistores são fundamentais para a eletrônica moderna.
+                    Milhões ou até bilhões de transistores podem ser integrados
+                    em um único chip, dependendo do tipo de circuito integrado.
+                </p>
+
+                <h2>9. Resumo</h2>
+
+                <ul>
+                    <li>TBJ significa transistor bipolar de junção.</li>
+                    <li>Seus terminais são base, coletor e emissor.</li>
+                    <li>Os tipos mais comuns são NPN e PNP.</li>
+                    <li>Ele pode funcionar como amplificador ou como chave eletrônica.</li>
+                </ul>
+
+                <h2>10. Teste seus conhecimentos</h2>
+
+                <details>
+                    <summary>Quais são os três terminais de um TBJ?</summary>
+                    <p>Base, coletor e emissor.</p>
+                </details>
+
+                <details>
+                    <summary>Quais são os dois tipos mais comuns de TBJ?</summary>
+                    <p>NPN e PNP.</p>
+                </details>
+
+                <details>
+                    <summary>Em qual região o TBJ pode funcionar como amplificador?</summary>
+                    <p>Na região ativa.</p>
+                </details>
+
+                <h2>11. Para saber mais</h2>
+
+                <ul>
+                    <li>
+                        <a href="https://www.allaboutcircuits.com/textbook/semiconductors/"
+                           target="_blank" rel="noopener noreferrer">
+                            All About Circuits — Semicondutores
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.electronics-tutorials.ws/transistor/tran_1.html"
+                           target="_blank" rel="noopener noreferrer">
+                            Electronics Tutorials — Transistores
+                        </a>
+                    </li>
+                </ul>
+
+                <a class="botao botao-voltar" href="index.html#conteudos">
+                    Voltar aos conteúdos
+                </a>
+
+            </section>
+
+        </main>
+    </div> <!-- FECHAMENTO DO LAYOUT CONTAINER -->
+
+    <footer>
+        <div class="container">
+            <p>Conecta Eletrônica — Aprender, descobrir e conectar ideias.</p>
+        </div>
+    </footer>
+
+    <!-- Chamada do arquivo JavaScript na pasta js -->
+    <script src="js/script.js"></script>
+</body>
+</html>

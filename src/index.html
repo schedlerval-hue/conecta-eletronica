@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conecta Eletrônica | Portal Educacional</title>
+    
+    <!-- Chamada do CSS na pasta css -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Chamada do JS na pasta js -->
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- 1. TOPO / HEADER COMPLETO -->
+    <header class="top-bar">
+        <div class="container header-content">
+            <h1>⚡ Conecta Eletrônica</h1>
+            <nav>
+                <a href="#inicio">Início</a>
+                <a href="#conteudos">Conteúdos</a>
+                <a href="#sobre">Sobre</a>
+                <a href="#quiz">Quiz</a>
+            </nav>
+            <div class="search-cta">
+                <input type="text" placeholder="Buscar no portal...">
+                <a href="#" class="btn-cta">Login</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- CONTAINER DE LAYOUT (SIDEBAR + MAIN) -->
+    <div class="layout-container">
+
+        <!-- 2. MENU LATERAL (SIDEBAR VERTICAL) -->
+        <aside class="sidebar">
+            <h3>Navegação de Assuntos</h3>
+            <ul>
+                <li><a href="index.html" class="active">Início (Visão Geral)</a></li>
+                <li><a href="diodos.html">Diodos e Retificação</a></li>
+                <li><a href="tbj.html">Transistores (TBJ)</a></li>
+                <li><a href="mosfets.html">Transistores MOSFET</a></li>
+                <li><a href="circuitos-integrados.html">Circuitos Integrados</a></li>
+            </ul>
+        </aside>
+
+        <!-- 3. PAINEL CENTRAL (MAIN) -->
+        <main class="content-area">
+
+            <!-- Hero Section -->
+            <section class="hero" id="inicio">
+                <div class="container">
+                    <p class="destaque">APRENDA • EXPLORE • CONECTE</p>
+                    <h2>Descubra o mundo da eletrônica!</h2>
+                    <p>
+                        Entenda como os componentes eletrônicos funcionam e descubra
+                        a tecnologia que está presente no nosso dia a dia.
+                    </p>
+                    <a href="#conteudos" class="botao">Explorar conteúdos</a>
+                </div>
+            </section>
+
+            <!-- Seção Importância -->
+            <section class="importancia">
+                <div class="container conteudo-importancia">
+                    <div>
+                        <p class="subtitulo">POR QUE APRENDER?</p>
+                        <h2>A eletrônica está em toda parte</h2>
+                    </div>
+                    <p>
+                        Estudar eletrônica nos ajuda a compreender como funcionam
+                        dispositivos presentes no dia a dia, como celulares,
+                        computadores e sistemas de automação. Esse conhecimento
+                        desenvolve o raciocínio lógico, a criatividade e a capacidade
+                        de resolver problemas, além de permitir imaginar e criar
+                        soluções tecnológicas para diferentes necessidades da sociedade.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Seção de Módulos / Conteúdos -->
+            <section id="conteudos" class="container secao">
+                <div class="cabecalho-secao">
+                    <p class="subtitulo">APRENDA NO SEU RITMO</p>
+                    <h2>Explore os conteúdos</h2>
+                    <p>Conheça os principais componentes e suas aplicações.</p>
+                </div>
+
+                <div class="cards">
+                    <article class="card">
+                        <div class="icone-card">01</div>
+                        <h3>Diodos</h3>
+                        <p>
+                            Descubra como os diodos controlam o sentido da corrente
+                            elétrica e conheça os LEDs.
+                        </p>
+                        <a href="diodos.html" class="link-card">Aprender sobre diodos →</a>
+                    </article>
+
+                    <article class="card">
+                        <div class="icone-card">02</div>
+                        <h3>Transistores TBJ</h3>
+                        <p>
+                            Entenda como os transistores bipolares podem funcionar
+                            como interruptores e amplificadores.
+                        </p>
+                        <a href="tbj.html" class="link-card">Aprender sobre TBJ →</a>
+                    </article>
+
+                    <article class="card">
+                        <div class="icone-card">03</div>
+                        <h3>MOSFETs</h3>
+                        <p>
+                            Conheça os transistores controlados por tensão e sua
+                            importância nos circuitos eletrônicos.
+                        </p>
+                        <a href="mosfets.html" class="link-card">Aprender sobre MOSFETs →</a>
+                    </article>
+
+                    <article class="card">
+                        <div class="icone-card">04</div>
+                        <h3>Circuitos integrados</h3>
+                        <p>
+                            Explore componentes que reúnem vários elementos
+                            eletrônicos em um único chip.
+                        </p>
+                        <a href="circuitos-integrados.html" class="link-card">
+                            Aprender sobre circuitos integrados →
+                        </a>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Seção Sobre -->
+            <section id="sobre" class="sobre">
+                <div class="container">
+                    <p class="subtitulo">NOSSA PROPOSTA</p>
+                    <h2>Aprender eletrônica pode ser simples!</h2>
+                    <p>
+                        O Conecta Eletrônica é um portal educativo criado para
+                        apresentar conceitos de eletrônica de maneira clara,
+                        organizada e acessível. Explore os conteúdos, veja exemplos
+                        de aplicação e teste seus conhecimentos no quiz.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Seção Quiz -->
+            <section id="quiz" class="container secao quiz">
+                <div class="cabecalho-secao">
+                    <p class="subtitulo">HORA DE PRATICAR</p>
+                    <h2>Teste seus conhecimentos</h2>
+                    <p>
+                        Você aprendeu sobre os componentes eletrônicos?
+                        Responda às perguntas e descubra!
+                    </p>
+                    <button type="button" class="botao" id="abrir-quiz">
+                        Fazer o quiz
+                    </button>
+                </div>
+
+                <div id="area-quiz" hidden>
+                    <div id="quiz-container">
+                        <p id="progresso"></p>
+                        <h3 id="pergunta"></h3>
+                        <div id="alternativas"></div>
+                        <p id="feedback" aria-live="polite"></p>
+                        <button type="button" id="proximo" hidden>
+                            Próxima pergunta
+                        </button>
+                        <div id="resultado" hidden></div>
+                        <button type="button" id="reiniciar" hidden>
+                            Refazer quiz
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div> <!-- FECHAMENTO DO LAYOUT CONTAINER -->
+
+    <!-- 4. BASE / FOOTER COMPLETO -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div class="footer-col">
+                <h4>⚡ Conecta Eletrônica</h4>
+                <p>Portal educacional focado na disseminação de conceitos básicos e avançados de eletroeletrônica.</p>
+            </div>
+            <div class="footer-col">
+                <h4>Links Institucionais</h4>
+                <ul>
+                    <li><a href="#sobre">Quem Somos</a></li>
+                    <li><a href="#">Políticas de Privacidade</a></li>
+                    <li><a href="#">Termos de Uso</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contato</h4>
+                <p>E-mail: contato@conectaeletronica.com.br</p>
+                <p>CNPJ: 00.000.000/0001-00</p>
+                <p>Endereço: Av. Principal, 1000 - São Paulo, SP</p>
+            </div>
+            <div class="footer-col">
+                <h4>Redes & Sitemap</h4>
+                <ul>
+                    <li><a href="#inicio">Mapa do Site</a></li>
+                    <li><a href="#">GitHub</a> | <a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Conecta Eletrônica. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

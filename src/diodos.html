@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Diodos e Retificação | Conecta Eletrônica</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Chamada do arquivo CSS dentro da pasta css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pagina-conteudo">
+
+    <header class="top-bar">
+        <div class="container">
+            <h1>Conecta Eletrônica</h1>
+
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="index.html#conteudos">Conteúdos</a>
+                <a href="index.html#sobre">Sobre</a>
+                <a href="index.html#quiz">Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTAINER DE LAYOUT (Sidebar + Main) -->
+    <div class="layout-container">
+
+        <!-- MENU LATERAL (SIDEBAR) -->
+        <aside class="sidebar">
+            <h3>Navegação de Assuntos</h3>
+            <ul>
+                <li><a href="index.html">Início (Visão Geral)</a></li>
+                <li><a href="diodos.html" class="active">Diodos e Retificação</a></li>
+                <li><a href="tbj.html">Transistores (TBJ)</a></li>
+                <li><a href="mosfets.html">Transistores MOSFET</a></li>
+                <li><a href="circuitos-integrados.html">Circuitos Integrados</a></li>
+            </ul>
+        </aside>
+
+        <!-- PAINEL CENTRAL (CONTEÚDO) -->
+        <main class="content-area">
+
+            <!-- Apresentação -->
+            <section class="hero">
+                <div class="container">
+                    <h2>Diodos e Retificação</h2>
+
+                    <p>
+                        Aprenda sobre o funcionamento da junção PN, os diferentes tipos de diodos
+                        e como transformar Corrente Alternada (CA) em Corrente Contínua (CC).
+                    </p>
+
+                    <a class="botao" href="#conteudo-diodos">
+                        Começar a aprender
+                    </a>
+                </div>
+            </section>
+
+            <!-- Conteúdo principal -->
+            <section id="conteudo-diodos" class="caixa-conteudo">
+
+                <h2>1. Introdução</h2>
+                <p>
+                    Os diodos são componentes semicondutores fundamentais na eletrônica moderna.
+                    Funcionam como válvulas de mão única, permitindo a passagem de corrente elétrica
+                    em apenas um sentido, o que os torna indispensáveis para a conversão de energia e proteção de circuitos.
+                </p>
+
+                <h2>2. Conteúdo Técnico e Junção PN</h2>
+                <p>
+                    O diodo é formado pela junção de dois materiais semicondutores: o tipo P (com excesso de lacunas) e o tipo N (com excesso de elétrons).
+                    Quando polarizado diretamente (Anodo positivo em relação ao Catodo), ele vence uma barreira de potencial (~0,7V para o Silício) e conduz corrente.
+                    Na polarização reversa, o diodo bloqueia a passagem da corrente.
+                </p>
+
+                <h2>3. Principais Tipos de Diodos</h2>
+                <div class="cards">
+
+                    <article class="card">
+                        <h3>Diodo Retificador</h3>
+                        <p>
+                            Projetado para suportar correntes elevadas e converter CA em CC.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Diodo Zener</h3>
+                        <p>
+                            Trabalha na região de ruptura reversa para manter uma tensão constante (regulação de tensão).
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>LED (Diodo Emissor de Luz)</h3>
+                        <p>
+                            Emitem luz visível ou infravermelha quando polarizados diretamente.
+                        </p>
+                    </article>
+
+                </div>
+
+                <h2>4. Circuitos Retificadores</h2>
+                <p>
+                    A retificação é o processo de conversão de sinal alternado em contínuo:
+                </p>
+                <ul>
+                    <li><strong>Retificador de Meia Onda:</strong> Utiliza apenas um diodo e aproveita somente meio ciclo da onda senoidal.</li>
+                    <li><strong>Retificador de Onda Completa:</strong> Utiliza uma ponte de diodos (4 diodos) ou ponto médio para aproveitar ambos os ciclos da onda.</li>
+                </ul>
+
+                <h2>5. Exemplos Práticos</h2>
+                <p>
+                    Aplicações cotidianas e industriais dos diodos incluem:
+                </p>
+                <ul>
+                    <li>Carregadores de celular (Fontes de alimentação).</li>
+                    <li>Proteção contra inversão de polaridade em baterias.</li>
+                    <li>Painéis e iluminação de baixo consumo (LEDs).</li>
+                </ul>
+
+                <h2>6. Curiosidades</h2>
+                <p>
+                    O LED azul demorou décadas para ser inventado e garantiu o Prêmio Nobel de Física aos seus criadores em 2014, pois sua descoberta permitiu a criação das lâmpadas LED brancas modernas!
+                </p>
+
+                <h2>7. Resumo para o Caderno</h2>
+                <ul>
+                    <li><strong>Anodo (+):</strong> Lado de entrada da corrente na polarização direta.</li>
+                    <li><strong>Catodo (-):</strong> Lado de saída (identificado pela faixa no corpo do diodo).</li>
+                    <li><strong>Barreira de Silício:</strong> Exige cerca de 0,7V para começar a conduzir.</li>
+                    <li><strong>Função principal:</strong> Converter CA para CC e proteger circuitos contra retorno de corrente.</li>
+                </ul>
+
+                <h2>8. Teste seus conhecimentos</h2>
+
+                <details>
+                    <summary>Qual a principal diferença entre polarização direta e reversa?</summary>
+                    <p>
+                        Na direta, o diodo permite a passagem de corrente (superando a barreira de 0,7V). Na reversa, o diodo bloqueia a corrente.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Para que serve um Diodo Zener?</summary>
+                    <p>
+                        Ele é projetado para operar na polarização reversa mantendo uma tensão fixa, sendo usado como regulador de tensão.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Quantos diodos são necessários em uma ponte retificadora de onda completa?</summary>
+                    <p>
+                        São necessários 4 diodos configurados em ponte.
+                    </p>
+                </details>
+
+                <h2>9. Referências</h2>
+                <ul>
+                    <li>
+                        <a href="https://www.allaboutcircuits.com/" target="_blank" rel="noopener noreferrer">
+                            All About Circuits — Diodes and Rectifiers
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.electronics-tutorials.ws/" target="_blank" rel="noopener noreferrer">
+                            Electronics Tutorials — Semiconductor Diode
+                        </a>
+                    </li>
+                </ul>
+
+                <a class="botao botao-voltar" href="index.html#conteudos">
+                    Voltar aos conteúdos
+                </a>
+
+            </section>
+
+        </main>
+    </div> <!-- FECHAMENTO DO LAYOUT CONTAINER -->
+
+    <footer>
+        <div class="container">
+            <p>Conecta Eletrônica — Aprender, descobrir e conectar ideias.</p>
+        </div>
+    </footer>
+
+    <!-- Chamada do arquivo JavaScript na pasta js -->
+    <script src="js/script.js"></script>
+</body>
+</html>
