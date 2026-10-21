@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Circuitos Integrados | Conecta Eletrônica</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- Se mover o style.css para a pasta css, altere para "css/style.css" -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="pagina-conteudo">
+
+    <header class="top-bar">
+        <div class="container">
+            <h1>Conecta Eletrônica</h1>
+
+            <nav>
+                <a href="index.html">Início</a>
+                <a href="index.html#conteudos">Conteúdos</a>
+                <a href="index.html#sobre">Sobre</a>
+                <a href="index.html#quiz">Quiz</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- CONTAINER DE LAYOUT (Lado a Lado: Sidebar + Main) -->
+    <div class="layout-container">
+
+        <!-- MENU LATERAL (SIDEBAR) ADICIONADO -->
+        <aside class="sidebar">
+            <h3>Navegação de Assuntos</h3>
+            <ul>
+                <li><a href="index.html">Início (Visão Geral)</a></li>
+                <li><a href="diodos.html">Diodos e Retificação</a></li>
+                <li><a href="tbj.html">Transistores (TBJ)</a></li>
+                <li><a href="mosfets.html">Transistores MOSFET</a></li>
+                <li><a href="circuitos-integrados.html" class="active">Circuitos Integrados</a></li>
+            </ul>
+        </aside>
+
+        <!-- PAINEL CENTRAL (CONTEÚDO) -->
+        <main class="content-area">
+
+            <!-- Apresentação -->
+            <section class="hero">
+                <div class="container">
+                    <h2>Circuitos Integrados</h2>
+
+                    <p>
+                        Descubra como diversos componentes eletrônicos podem ser
+                        reunidos em um pequeno chip para realizar funções importantes.
+                    </p>
+
+                    <a class="botao" href="#conteudo-ci">
+                        Começar a aprender
+                    </a>
+                </div>
+            </section>
+
+            <!-- Conteúdo principal -->
+            <section id="conteudo-ci" class="caixa-conteudo">
+
+                <h2>1. O que é um circuito integrado?</h2>
+
+                <p>
+                    Um circuito integrado, também conhecido como CI ou chip, é um
+                    dispositivo que reúne vários componentes eletrônicos interligados
+                    em uma pequena estrutura semicondutora. Ele pode executar
+                    funções específicas em um sistema eletrônico.
+                </p>
+
+                <h2>2. Como funciona?</h2>
+
+                <p>
+                    Dentro de um circuito integrado podem existir transistores,
+                    resistores, capacitores e outras estruturas, dependendo da
+                    tecnologia e do tipo de chip. Esses elementos são organizados
+                    para realizar tarefas como processar informações, amplificar
+                    sinais, controlar dispositivos ou armazenar dados.
+                </p>
+
+                <h2>3. O que pode existir dentro de um chip?</h2>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <h3>Transistores</h3>
+                        <p>
+                            Podem funcionar como chaves eletrônicas e participar
+                            da amplificação de sinais.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Conexões</h3>
+                        <p>
+                            Interligam as estruturas internas para que trabalhem
+                            em conjunto.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Outros componentes</h3>
+                        <p>
+                            Dependendo do projeto, o chip pode conter resistores,
+                            capacitores e outras estruturas eletrônicas.
+                        </p>
+                    </article>
+
+                </div>
+
+                <h2>4. Tipos de circuitos integrados</h2>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <h3>Analógicos</h3>
+                        <p>
+                            Trabalham com sinais que variam continuamente, como
+                            sinais de áudio e determinadas medições de sensores.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Digitais</h3>
+                        <p>
+                            Processam informações representadas por estados lógicos,
+                            sendo usados em processadores, controladores e memórias.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>De sinais mistos</h3>
+                        <p>
+                            Combinam funções analógicas e digitais no mesmo
+                            circuito integrado.
+                        </p>
+                    </article>
+
+                </div>
+
+                <h2>5. Onde são utilizados?</h2>
+
+                <ul>
+                    <li>Celulares e computadores.</li>
+                    <li>Televisores e equipamentos de áudio.</li>
+                    <li>Calculadoras e relógios digitais.</li>
+                    <li>Automóveis e sistemas de controle.</li>
+                    <li>Equipamentos médicos e instrumentos de medição.</li>
+                    <li>Sistemas de comunicação e automação.</li>
+                </ul>
+
+                <h2>6. Exemplo: o circuito integrado 555</h2>
+
+                <p>
+                    O temporizador 555 é um circuito integrado bastante conhecido.
+                    Dependendo da configuração externa, pode ser usado para gerar
+                    pulsos, produzir sinais periódicos ou criar temporizações
+                    em circuitos eletrônicos.
+                </p>
+
+                <h3>Um exemplo de aplicação</h3>
+
+                <p>
+                    Em uma montagem adequada, o 555 pode controlar o intervalo
+                    entre os acendimentos de um LED, fazendo com que ele pisque.
+                    Resistores e capacitores externos ajudam a determinar o
+                    comportamento temporal do circuito.
+                </p>
+
+                <h2>7. Vantagens dos circuitos integrados</h2>
+
+                <div class="cards">
+
+                    <article class="card">
+                        <h3>Tamanho reduzido</h3>
+                        <p>
+                            Reúnem muitas funções em um espaço pequeno.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Integração</h3>
+                        <p>
+                            Vários elementos podem funcionar juntos dentro
+                            do mesmo chip.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Desempenho</h3>
+                        <p>
+                            O projeto integrado pode proporcionar funcionamento
+                            rápido e eficiente, dependendo da aplicação.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <h3>Produção em escala</h3>
+                        <p>
+                            A fabricação em grande escala permite produzir
+                            muitos dispositivos com estruturas semelhantes.
+                        </p>
+                    </article>
+
+                </div>
+
+                <h2>8. Por que são tão importantes?</h2>
+
+                <p>
+                    Os circuitos integrados permitem criar sistemas eletrônicos
+                    compactos e complexos. Eles contribuíram para o desenvolvimento
+                    de computadores, smartphones, equipamentos de comunicação e
+                    muitas outras tecnologias presentes no cotidiano.
+                </p>
+
+                <h2>9. Curiosidade</h2>
+
+                <p>
+                    Um processador moderno pode conter bilhões de transistores
+                    em um único chip. O número exato depende do modelo e de
+                    sua arquitetura.
+                </p>
+
+                <h2>10. Resumo</h2>
+
+                <ul>
+                    <li>Um circuito integrado reúne componentes em um chip.</li>
+                    <li>Pode executar funções analógicas, digitais ou de sinais mistos.</li>
+                    <li>É utilizado em muitos equipamentos eletrônicos.</li>
+                    <li>O temporizador 555 é um exemplo de circuito integrado.</li>
+                </ul>
+
+                <h2>11. Teste seus conhecimentos</h2>
+
+                <details>
+                    <summary>O que é um circuito integrado?</summary>
+                    <p>
+                        É um dispositivo que reúne componentes eletrônicos
+                        interligados em um chip para executar determinadas funções.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Qual é a diferença entre circuitos integrados analógicos e digitais?</summary>
+                    <p>
+                        Os analógicos trabalham com sinais que variam continuamente,
+                        enquanto os digitais processam informações representadas
+                        por estados lógicos.
+                    </p>
+                </details>
+
+                <details>
+                    <summary>Para que o temporizador 555 pode ser utilizado?</summary>
+                    <p>
+                        Para criar temporizações, gerar pulsos e produzir sinais
+                        periódicos, conforme a configuração do circuito.
+                    </p>
+                </details>
+
+                <h2>12. Para saber mais</h2>
+
+                <ul>
+                    <li>
+                        <a href="https://www.allaboutcircuits.com/"
+                           target="_blank" rel="noopener noreferrer">
+                            All About Circuits — Eletrônica
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.electronics-tutorials.ws/"
+                           target="_blank" rel="noopener noreferrer">
+                            Electronics Tutorials — Tutoriais de eletrônica
+                        </a>
+                    </li>
+                </ul>
+
+                <a class="botao botao-voltar" href="index.html#conteudos">
+                    Voltar aos conteúdos
+                </a>
+
+            </section>
+
+        </main>
+    </div> <!-- FECHAMENTO DO LAYOUT CONTAINER -->
+
+    <footer>
+        <div class="container">
+            <p>Conecta Eletrônica — Aprender, descobrir e conectar ideias.</p>
+        </div>
+    </footer>
+
+    <!-- Chamada do arquivo JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
